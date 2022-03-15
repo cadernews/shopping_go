@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #b8d1b5, #96a889 );
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+span {
+    
+}
+::placeholder {
+    color:rgba(211, 211, 211, 0.39);
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.price-input {
+    margin-left: 0.5rem;
+    width: 19%;
+}
+
+.name-input {
+    width: 45%;
+}
+
+form button {
+    color:#aac099;
+    background:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+form button:hover {
+    background: #aac099;
+    color: white;
+}
+
+.shopping-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shopping-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.buy {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+}
+
+.buy li {
+    flex: 1;
+}
+
+#edit, #delete {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    position: absolute;
+}
+
+#delete {
+    background:#e65529;
+    color: white;
+    top: 0px;
+    right: -46px;
+}
+
+#edit {
+    background: #789395;
+    color: white;
+    top: 0px;
+    left: -49px;
+}
+
+.fa-trash, .fa-pen-to-square {
+    pointer-events: none;
+    
+}
+
+.total {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+}
